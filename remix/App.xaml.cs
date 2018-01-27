@@ -8,7 +8,7 @@ namespace remix
         {
             InitializeComponent();
 
-            MainPage = new remixPage();
+            MainPage = new Layouts.Stack();
         }
 
         protected override void OnStart()
