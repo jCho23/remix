@@ -4,9 +4,15 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
     x:Class="remix.Layouts.Stack">
 
-	<StackLayout>
+	<StackLayout
+        VerticalOptions="Center"
+        HorizontalOptions="Center">
         <Label
+            x:Name= "label"
             Text="Hi" />
+        <Slider
+            x:Name= "slider"
+            ValueChanged="Handle_ValueChanged"/>
 
     </StackLayout>
 </ContentPage>
