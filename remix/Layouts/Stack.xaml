@@ -7,15 +7,15 @@
 	<StackLayout
         VerticalOptions="Center"
         HorizontalOptions="Center">
+        <BoxView 
+            Color="Aqua"
+            Opacity= "{Binding Source= {x:Reference slider}, Path= Value}"/>
         <Label
             x:Name= "label"
-            Text="{Binding 
-                    Source= {x:Reference slider},
-                    Path= Value, 
+            BindingContext="{x:Reference slider}"
+            Text="{Binding Value, 
                     StringFormat= 'Value is {0:F2}' }"
-            Opacity="{Binding
-                        Source= {x:Reference slider},
-                        Path= Value }"/>
+            Opacity="{Binding Value}"/>
         <Slider
             x:Name= "slider" />
 
