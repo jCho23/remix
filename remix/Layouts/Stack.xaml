@@ -9,10 +9,12 @@
         HorizontalOptions="Center">
         <Label
             x:Name= "label"
-            Text="Hi" />
+            Text="{Binding 
+                    Source={x:Reference slider},
+                    Path = Value, 
+                    StringFormat='Value is {0:F2} }" />
         <Slider
-            x:Name= "slider"
-            ValueChanged="Handle_ValueChanged"/>
+            x:Name= "slider" />
 
     </StackLayout>
 </ContentPage>
