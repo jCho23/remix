@@ -11,7 +11,7 @@ namespace remix.Layouts
         {
             InitializeComponent();
 
-            slider.Value = 0.0;
+            slider.Value = 0.5;
         }
 
     //    void Handle_ValueChanged(object sender, Xamarin.Forms.ValueChangedEventArgs e)
