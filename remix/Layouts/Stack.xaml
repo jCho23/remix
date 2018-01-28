@@ -10,15 +10,13 @@
         BindingContext="{x:Reference slider}">
         <BoxView 
             Color="Blue"
-            />
+            Opacity= "{Binding Value}"/>
         <Label
             x:Name= "label"
             Text="{Binding Value, 
                    StringFormat='Value is {0:F2}' }"
-            />
-
-
-
+            Opacity="{Binding Value}"/>
+          
         <Slider
             x:Name= "slider" />
 
